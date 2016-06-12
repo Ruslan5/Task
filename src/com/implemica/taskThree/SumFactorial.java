@@ -4,8 +4,9 @@ import java.math.BigInteger;
 
 /**
  * Created by 1 on 08.06.2016.
+ * author: Mirzoiev Ruslan
  */
-public class BigInt {
+class SumFactorial {
     public static void main(String[] args) {
         BigInteger f = BigInteger.valueOf(1);
 
@@ -16,16 +17,14 @@ public class BigInt {
         }
         //the sum of the digits
         String x = f.toString();
-        int data [] = new int[x.length()];
+        int data[] = new int[x.length()];
         int sum = 0;
         for (int j = 0; j < x.length(); j++) {
-            data[j] = (int)x.charAt(j)^48;
+            data[j] = (int) x.charAt(j) ^ 48;
             sum += data[j];
         }
 
         System.out.println(sum);
-
-
 
     }
 }
